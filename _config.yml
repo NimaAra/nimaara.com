@@ -1,0 +1,45 @@
+title: "Hi, I am Nima"
+author: "Nima Ara"
+description: "Nima is a full-stack .NET technologist focusing on building high-performance, low-latency server and distributed message-based components; He is also a library author and OSS contributor."
+
+# Email / Social media user names used by the minima theme:
+email: "admin@nimaara.com"
+twitter_username: "nimaara"
+github_username: "nimaara"
+linkedin_username: "nimaara"
+#facebook_username: username
+#flickr_username: username
+#instagram_username: username
+#pinterest_username: username
+#youtube_username: username
+#googleplus_username: +username
+
+google_analytics: UA-71904121-1
+
+theme: "minima"
+
+rss: rss
+
+kramdown:
+  syntax_highlighter_opts:
+    disable: true
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-redirect-from
+
+titles_from_headings:
+  strip_title: true
+  collections: true
+
+defaults:
+  - scope:
+      path: ""
+      type: post
+    values:
+      tags: Other
+
+# https://github.com/jekyll/jekyll-redirect-from#disabling-redirectsjson
+redirect_from:
+  json: false

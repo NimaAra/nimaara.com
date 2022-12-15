@@ -1,0 +1,103 @@
+body {
+  background: #d5d5d5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #f9f9f9, #d5d5d5); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #f9f9f9, #d5d5d5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+pre {
+  padding: 0;
+  border-radius: 8px;
+  border-width: 2px;
+  border-color: #b0b0b0;
+}
+
+pre > code {
+  /* background: #f3f3f3; */
+  font-size: 0.88rem;
+}
+
+hr {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+/* .hljs {
+  background: #f0f0f0;
+}
+
+.hljs.language-shell {
+  color: #f8f8f2;
+  background: #272822;
+} */
+
+.wrapper { 
+  max-width: calc(70% - (30px * 2));
+ }
+
+.site-nav {
+  border-color: #909090;
+}
+
+/* post headers only */
+.post-content h1, .post-content h2, .post-content h3, .post-content h4, .post-content h5, .post-content h6 {
+  margin-bottom: 5px;
+  font-family: 'Merriweather', serif;
+}
+
+.post-list li {
+  margin: 0;  
+}
+
+.post-content img {
+  --s: 10px; /* control the size */
+  padding: var(--s);
+  border: calc(2*var(--s)) solid #0000;
+  outline: 1px solid #000;
+  outline-offset: calc(-1*var(--s));
+  background: conic-gradient(from 90deg at 1px 1px,#0000 25%,#000 0);
+}
+
+.post-list li a {
+  font-size: 1.1rem;
+}
+
+/* Post navigation links */
+.post_navi {
+  display: flex;
+}
+
+.post_navi-label {
+  font-size: 0.8em;
+  opacity: 0.5;
+}
+
+.post_navi .post_navi-item {
+  padding: 0 2.2em;
+  width: 50%;
+  position: relative;
+  color: inherit !important;
+}
+
+.post_navi .nav_prev {
+  text-align: left;
+}
+
+.post_navi .nav_next {
+  text-align: right;
+}
+
+.post_navi .nav_prev .post_navi-arrow {
+  left: 0;
+}
+
+.post_navi .nav_next .post_navi-arrow {
+  right: 0;
+}
+
+.post_navi .post_navi-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2.5em;
+  opacity: 0.3;
+}
