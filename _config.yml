@@ -14,9 +14,12 @@ linkedin_username: "nimaara"
 #youtube_username: username
 #googleplus_username: +username
 
-google_analytics: UA-71904121-1
+google_analytics: G-KRB3KBQ0RR
 
 theme: "minima"
+
+sass:
+  quiet_deps: true
 
 rss: rss
 
@@ -36,7 +39,7 @@ titles_from_headings:
 defaults:
   - scope:
       path: ""
-      type: post
+      type: posts
     values:
       tags: Other
 
