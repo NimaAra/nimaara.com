@@ -1,4 +1,5 @@
 title: "Hi, I am Nima"
+url: "https://nimaara.com"
 author: "Nima Ara"
 description: "Nima is a full-stack .NET technologist focusing on building high-performance, low-latency server and distributed message-based components; He is also a library author and OSS contributor."
 
@@ -23,6 +24,10 @@ sass:
 
 rss: rss
 
+exclude:
+  - AGENTS.md
+  - docker-compose.yml
+
 kramdown:
   syntax_highlighter_opts:
     disable: true
@@ -31,6 +36,7 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-redirect-from
+  - jekyll-titles-from-headings
 
 titles_from_headings:
   strip_title: true
@@ -41,6 +47,7 @@ defaults:
       path: ""
       type: posts
     values:
+      layout: post
       tags: Other
 
 # https://github.com/jekyll/jekyll-redirect-from#disabling-redirectsjson

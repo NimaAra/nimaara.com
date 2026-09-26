@@ -25,17 +25,19 @@ Personal blog built with [Jekyll](https://jekyllrb.com/) and the [minima](https:
 
 ## Running Locally
 
-### Prerequisites
-- [Ruby](https://www.ruby-lang.org/en/downloads/) >= 2.7.0
-- [Bundler](https://bundler.io/) (`gem install bundler`)
+No Ruby required — the site runs in a Docker container:
 
-### Setup & Run
 ```
-bundle install
-bundle exec jekyll serve
+docker compose up
 ```
 
-The site will be available at `http://localhost:4000`.
+The site will be available at `http://localhost:4000` with live reload: edit or add files under `_posts/` and the browser refreshes automatically.
+
+Notes:
+
+- Drafts in `_drafts/` (filename without a date prefix, e.g. `my-post.md`) and posts with future dates appear in the preview but stay hidden on the live site.
+- Stop the server with `Ctrl+C`.
+- Gems are cached in the `jekyll-gems` Docker volume; the first run takes a minute, later runs start in seconds.
 
 ## Project Structure
 
@@ -45,5 +47,6 @@ The site will be available at `http://localhost:4000`.
 | `_layouts/` | Page templates (`home.html`, `post.html`) |
 | `_includes/` | Reusable HTML partials (head, footer, nav, share links, analytics) |
 | `_config.yml` | Site configuration (title, author, theme, plugins) |
+| `docker-compose.yml` | Local preview server (Docker, no Ruby needed) |
 | `css/` | Custom CSS overrides |
 | `assets/` | Images and static files |
